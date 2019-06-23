@@ -25,11 +25,11 @@ ENV COMPOSER_VERSION 1.8.6
 # Install Basic Requirements
 RUN DEBIAN_FRONTEND=noninteractive \
 	buildDeps='software-properties-common' \
-	&& apt-get install -y $buildDeps \
+	&& apt-get install --no-install-recommends --no-install-suggests -y $buildDeps openssl \
 	&& add-apt-repository -y ppa:ondrej/php \
 	&& add-apt-repository -y ppa:nginx/stable \
 	&& apt-get update \
-	&& apt-get install -q -y \
+	&& apt-get install --no-install-recommends --no-install-suggests -q -y \
 		gcc make autoconf libc-dev pkg-config libmcrypt-dev php-pear \
 		cron \
 		iputils-ping \
