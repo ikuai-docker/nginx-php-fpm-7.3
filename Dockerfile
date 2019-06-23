@@ -29,7 +29,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 	&& add-apt-repository -y ppa:ondrej/php \
 	&& add-apt-repository -y ppa:nginx/stable \
 	&& apt-get update \
-	&& apt-get install --no-install-recommends --no-install-suggests -q -y \
+	&& apt-get install --no-install-suggests -q -y \
 		gcc make autoconf libc-dev pkg-config libmcrypt-dev php-pear \
 		cron \
 		iputils-ping \
