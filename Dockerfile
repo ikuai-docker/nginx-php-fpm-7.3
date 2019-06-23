@@ -35,6 +35,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 		iputils-ping \
 		net-tools \
 		curl \
+		wget \
 		vim \
 		zip \
 		unzip \
