@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:18.10
 
 MAINTAINER Dylan <bbcheng@ikuai8.com>
 
@@ -25,7 +25,7 @@ ENV COMPOSER_VERSION 1.8.6
 # Install Basic Requirements
 RUN DEBIAN_FRONTEND=noninteractive \
 	buildDeps='software-properties-common' \
-	&& apt-get install --no-install-recommends --no-install-suggests -y $buildDeps openssl \
+	&& apt-get install --no-install-recommends --no-install-suggests -y $buildDeps \
 	&& add-apt-repository -y ppa:ondrej/php \
 	&& add-apt-repository -y ppa:nginx/stable \
 	&& apt-get update \
