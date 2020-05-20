@@ -21,6 +21,8 @@ ENV php_conf /etc/php/7.3/fpm/php.ini
 ENV fpm_conf /etc/php/7.3/fpm/pool.d/www.conf
 ENV COMPOSER_VERSION 1.8.6
 
+RUN pwd
+
 #############################################################################################
 # Install Basic Requirements
 RUN DEBIAN_FRONTEND=noninteractive \
