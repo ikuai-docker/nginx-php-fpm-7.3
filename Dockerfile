@@ -1,6 +1,6 @@
 FROM ubuntu:18.10
 
-MAINTAINER Dylan <bbcheng@ikuai8.com>
+MAINTAINER yfding <yfding@ikuai8.com>
 
 #############################################################################################
 # Locale, Language, Timezone
