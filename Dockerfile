@@ -65,6 +65,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 		php7.3-redis \
 		php7.3-gd \
 		php-mongodb \
+		php-swoole \
 	&& mkdir -p /run/php \
 	&& pip install wheel \
 	&& pip install supervisor supervisor-stdout \
